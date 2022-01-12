@@ -1,0 +1,145 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+@font-face {
+    font-family: "Copperplate Gothic Bold";
+}
+
+body {
+    font-family: "Copperplate Gothic Bold", sans-serif;
+    background-color: #644bff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*::selection{*/
+/*    color: #fff;*/
+/*    background: #664AFF;*/
+/*}*/
+
+.wrapper {
+    align-self: center;
+    margin-top: 100px;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-line {
+    /*flex-direction: column;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    /*background: white;*/
+    /*width: 400px;*/
+    /*border-radius: 5px;*/
+    /*position: relative;*/
+    /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);*/
+}
+
+/*.search-input {*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 5px;*/
+/*    flex: 1;*/
+/*    height: 40px;*/
+/*    line-height: 20px;*/
+/*    padding: 8px 15px;*/
+/*}*/
+
+.search-input {
+    width: 500px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    outline: none;
+    padding: 2px;
+}
+
+.active {
+    display: block;
+}
+
+.search {
+    width:500px;
+    max-height: 400px;
+    margin:0;
+    background-color: white;
+    list-style: none;
+    padding: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+.search-item {
+    padding: 2px;
+    font-size: 20px;
+    height: 35px;
+}
+
+.search-item:hover,
+.search-item:focus {
+    background-color: #efefef;
+    color: white;
+}
+
+.search-input.active .search {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.active {
+    display: block;
+}
+
+.repos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.repo {
+    margin-top: 10px;
+    display: flex;
+    background-color: deeppink;
+    width: 490px;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-close {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    border: 0;
+    position: relative;
+    align-self: center;
+}
+/*.btn-close::before {*/
+/*    content: '';*/
+/*    */
+/*}*/
+
+.text {
+    font-family: "Copperplate Gothic Bold", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 5px;
+    /*padding-top: 10px;*/
+    width: 150px;
+    padding-left: 5px;
+    align-self: center;
+    /*margin-block-start: 0;*/
+    /*margin-block-end: 0;*/
+}
+
+.hidden {
+    display: none;
+}
